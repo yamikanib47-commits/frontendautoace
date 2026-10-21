@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  
+  /* Executive Professional Navy Blue Theme Palette */
+  --color-primary: #1B365D;            /* Deep Executive Navy */
+  --color-primary-hover: #10243E;      /* Rich Midnight Navy */
+  --color-primary-light: #2A4D7E;      /* Refined Slate Navy */
+  --color-primary-subtle: #F0F4F8;     /* Soft Light Navy Tint */
+  --color-carwow-teal-hover: #10243E;  /* Compatibility alias */
+  --color-carwow-teal-subtle: #F0F4F8; /* Compatibility alias */
+  
+  --color-dark-section-bg: #0B192C;    /* Deep Professional Navy Canvas */
+  --color-inverse-surface: #10243E;    /* Elevated Navy Card Surface */
+  --color-card-surface: #FFFFFF;
+  --color-slate-bg: #F8FAFC;
+  
+  --color-surface-container-low: #F1F5F9;
+  --color-surface-container: #E2E8F0;
+  --color-surface-container-high: #CBD5E1;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-surface-variant: #94A3B8;
+  
+  --color-on-surface: #0F172A;
+  --color-on-surface-variant: #334155;
+  --color-on-primary: #FFFFFF;
+  
+  --color-text-primary: #0F172A;
+  --color-text-muted: #64748B;
+  --color-electric-green: #047857;     /* Subdued Forest Green for Verified status */
+  --color-electric-green-subtle: #ECFDF5;
+  --color-secondary: #475569;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #0F172A;
+  background-color: #F8FAFC;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Prevent auto-zoom on iOS mobile inputs */
+@media screen and (max-width: 767px) {
+  input[type="text"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="email"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Custom Typography Helpers */
+.font-display {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+.font-headline-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(22px, 3.5vw, 30px);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+.font-headline-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(17px, 2.5vw, 21px);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.font-headline-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(15px, 2vw, 17px);
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.font-title-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.font-price-headline {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(17px, 2.5vw, 20px);
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.font-body-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.font-label-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+}
+
+.font-label-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+.font-label-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+/* Material Symbols formatting */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth snap scrolling */
+.snap-scroll-x {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.snap-item {
+  scroll-snap-align: start;
+}

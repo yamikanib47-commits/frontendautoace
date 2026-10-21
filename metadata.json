@@ -1,0 +1,6 @@
+{
+  "name": "AutoAce Zed - Zambia Automotive Marketplace",
+  "description": "Zambia's automotive sourcing and demand-matching platform connecting buyers with vetted agents, genuine sellers, and verified RTSA documentation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
